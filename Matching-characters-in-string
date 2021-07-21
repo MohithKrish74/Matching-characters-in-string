@@ -1,0 +1,29 @@
+package com.company;
+
+import java.util.*;
+
+public class Main
+{
+    public static void main(String[] args)
+    {
+        Scanner in=new Scanner(System.in);
+        System.out.print("Enter the String 1: ");
+        String string1=in.nextLine();
+        System.out.print("Enter the String 2: ");
+        String string2=in.nextLine();
+        String matching_char="";
+        for(int i=0;i<string1.length();i++)
+        {
+            if(string1.charAt(i)==string2.charAt(i))
+                matching_char+=string1.charAt(i)+" ";
+        }
+        System.out.print("The matching characters in the strings are: "+matching_char);
+    }
+}
+
+
+
+
+
+
+
